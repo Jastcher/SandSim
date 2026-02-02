@@ -153,6 +153,30 @@ src/application.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sandbox.dir/build.make CMakeFiles/Sandbox.dir/src/application.cpp.s
 .PHONY : src/application.cpp.s
 
+src/dataTexture.o: src/dataTexture.cpp.o
+.PHONY : src/dataTexture.o
+
+# target to build an object file
+src/dataTexture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sandbox.dir/build.make CMakeFiles/Sandbox.dir/src/dataTexture.cpp.o
+.PHONY : src/dataTexture.cpp.o
+
+src/dataTexture.i: src/dataTexture.cpp.i
+.PHONY : src/dataTexture.i
+
+# target to preprocess a source file
+src/dataTexture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sandbox.dir/build.make CMakeFiles/Sandbox.dir/src/dataTexture.cpp.i
+.PHONY : src/dataTexture.cpp.i
+
+src/dataTexture.s: src/dataTexture.cpp.s
+.PHONY : src/dataTexture.s
+
+# target to generate assembly for a file
+src/dataTexture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sandbox.dir/build.make CMakeFiles/Sandbox.dir/src/dataTexture.cpp.s
+.PHONY : src/dataTexture.cpp.s
+
 src/frameBuffer.o: src/frameBuffer.cpp.o
 .PHONY : src/frameBuffer.o
 
@@ -501,6 +525,9 @@ help:
 	@echo "... src/application.o"
 	@echo "... src/application.i"
 	@echo "... src/application.s"
+	@echo "... src/dataTexture.o"
+	@echo "... src/dataTexture.i"
+	@echo "... src/dataTexture.s"
 	@echo "... src/frameBuffer.o"
 	@echo "... src/frameBuffer.i"
 	@echo "... src/frameBuffer.s"

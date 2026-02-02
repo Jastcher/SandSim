@@ -1,15 +1,19 @@
 #pragma once
 #include "shader.h"
+#include "window.h"
+#include <memory>
 
 class Renderer
 {
 
 public:
-  Renderer();
+  Renderer(std::shared_ptr<Window> window);
   ~Renderer();
-  void RenderScene();
+  void RenderScene(GLuint textureID);
 
 private:
-  Shader m_Shader = Shader("../src/shaders/default.shader");
+  Shader m_Shader;
   GLuint m_LonelyVao;
+
+  std::shared_ptr<Window> m_Window;
 };

@@ -7,6 +7,12 @@
 },
 {
   "directory": "/home/jastcher/Programming/cpp/Sandbox/Build",
+  "command": "/usr/bin/c++  -I/home/jastcher/Programming/cpp/Sandbox/vendor/include -I/home/jastcher/Programming/cpp/Sandbox/vendor/include/imgui -I/home/jastcher/Programming/cpp/Sandbox/src -std=gnu++17 -o CMakeFiles/Sandbox.dir/src/dataTexture.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/src/dataTexture.cpp",
+  "file": "/home/jastcher/Programming/cpp/Sandbox/src/dataTexture.cpp",
+  "output": "CMakeFiles/Sandbox.dir/src/dataTexture.cpp.o"
+},
+{
+  "directory": "/home/jastcher/Programming/cpp/Sandbox/Build",
   "command": "/usr/bin/c++  -I/home/jastcher/Programming/cpp/Sandbox/vendor/include -I/home/jastcher/Programming/cpp/Sandbox/vendor/include/imgui -I/home/jastcher/Programming/cpp/Sandbox/src -std=gnu++17 -o CMakeFiles/Sandbox.dir/src/frameBuffer.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/src/frameBuffer.cpp",
   "file": "/home/jastcher/Programming/cpp/Sandbox/src/frameBuffer.cpp",
   "output": "CMakeFiles/Sandbox.dir/src/frameBuffer.cpp.o"

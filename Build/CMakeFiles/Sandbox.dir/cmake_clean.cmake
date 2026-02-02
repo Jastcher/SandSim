@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Sandbox.dir/link.d"
   "CMakeFiles/Sandbox.dir/src/application.cpp.o"
   "CMakeFiles/Sandbox.dir/src/application.cpp.o.d"
+  "CMakeFiles/Sandbox.dir/src/dataTexture.cpp.o"
+  "CMakeFiles/Sandbox.dir/src/dataTexture.cpp.o.d"
   "CMakeFiles/Sandbox.dir/src/frameBuffer.cpp.o"
   "CMakeFiles/Sandbox.dir/src/frameBuffer.cpp.o.d"
   "CMakeFiles/Sandbox.dir/src/main.cpp.o"

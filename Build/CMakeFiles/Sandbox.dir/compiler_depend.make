@@ -3,6 +3,7 @@
 
 CMakeFiles/Sandbox.dir/src/application.cpp.o: /home/jastcher/Programming/cpp/Sandbox/src/application.cpp \
   /home/jastcher/Programming/cpp/Sandbox/src/application.h \
+  /home/jastcher/Programming/cpp/Sandbox/src/dataTexture.h \
   /home/jastcher/Programming/cpp/Sandbox/src/frameBuffer.h \
   /home/jastcher/Programming/cpp/Sandbox/src/renderer.h \
   /home/jastcher/Programming/cpp/Sandbox/src/shader.h \
@@ -207,6 +208,7 @@ CMakeFiles/Sandbox.dir/src/application.cpp.o: /home/jastcher/Programming/cpp/San
   /home/jastcher/Programming/cpp/Sandbox/vendor/include/imgui/imgui.h \
   /home/jastcher/Programming/cpp/Sandbox/vendor/include/imgui/imgui_impl_glfw.h \
   /home/jastcher/Programming/cpp/Sandbox/vendor/include/imgui/imgui_impl_opengl3.h \
+  /usr/include/GL/gl.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -495,6 +497,34 @@ CMakeFiles/Sandbox.dir/src/application.cpp.o: /home/jastcher/Programming/cpp/San
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h
 
+CMakeFiles/Sandbox.dir/src/dataTexture.cpp.o: /home/jastcher/Programming/cpp/Sandbox/src/dataTexture.cpp \
+  /home/jastcher/Programming/cpp/Sandbox/src/dataTexture.h \
+  /home/jastcher/Programming/cpp/Sandbox/src/window.h \
+  /home/jastcher/Programming/cpp/Sandbox/vendor/include/GLFW/glfw3.h \
+  /home/jastcher/Programming/cpp/Sandbox/vendor/include/KHR/khrplatform.h \
+  /home/jastcher/Programming/cpp/Sandbox/vendor/include/glad/glad.h \
+  /usr/include/GL/gl.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/sys/cdefs.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h
+
 CMakeFiles/Sandbox.dir/src/frameBuffer.cpp.o: /home/jastcher/Programming/cpp/Sandbox/src/frameBuffer.cpp \
   /home/jastcher/Programming/cpp/Sandbox/src/frameBuffer.h \
   /home/jastcher/Programming/cpp/Sandbox/src/window.h \
@@ -725,6 +755,7 @@ CMakeFiles/Sandbox.dir/src/frameBuffer.cpp.o: /home/jastcher/Programming/cpp/San
 
 CMakeFiles/Sandbox.dir/src/main.cpp.o: /home/jastcher/Programming/cpp/Sandbox/src/main.cpp \
   /home/jastcher/Programming/cpp/Sandbox/src/application.h \
+  /home/jastcher/Programming/cpp/Sandbox/src/dataTexture.h \
   /home/jastcher/Programming/cpp/Sandbox/src/frameBuffer.h \
   /home/jastcher/Programming/cpp/Sandbox/src/renderer.h \
   /home/jastcher/Programming/cpp/Sandbox/src/shader.h \
@@ -929,6 +960,7 @@ CMakeFiles/Sandbox.dir/src/main.cpp.o: /home/jastcher/Programming/cpp/Sandbox/sr
   /home/jastcher/Programming/cpp/Sandbox/vendor/include/imgui/imgui.h \
   /home/jastcher/Programming/cpp/Sandbox/vendor/include/imgui/imgui_impl_glfw.h \
   /home/jastcher/Programming/cpp/Sandbox/vendor/include/imgui/imgui_impl_opengl3.h \
+  /usr/include/GL/gl.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -1220,6 +1252,7 @@ CMakeFiles/Sandbox.dir/src/main.cpp.o: /home/jastcher/Programming/cpp/Sandbox/sr
 CMakeFiles/Sandbox.dir/src/renderer.cpp.o: /home/jastcher/Programming/cpp/Sandbox/src/renderer.cpp \
   /home/jastcher/Programming/cpp/Sandbox/src/renderer.h \
   /home/jastcher/Programming/cpp/Sandbox/src/shader.h \
+  /home/jastcher/Programming/cpp/Sandbox/src/window.h \
   /home/jastcher/Programming/cpp/Sandbox/vendor/include/GLFW/glfw3.h \
   /home/jastcher/Programming/cpp/Sandbox/vendor/include/KHR/khrplatform.h \
   /home/jastcher/Programming/cpp/Sandbox/vendor/include/glad/glad.h \
@@ -1505,10 +1538,15 @@ CMakeFiles/Sandbox.dir/src/renderer.cpp.o: /home/jastcher/Programming/cpp/Sandbo
   /usr/include/bits/wordsize.h \
   /usr/include/bits/xopen_lim.h \
   /usr/include/c++/15.2.1/array \
+  /usr/include/c++/15.2.1/backward/auto_ptr.h \
   /usr/include/c++/15.2.1/backward/binders.h \
   /usr/include/c++/15.2.1/bit \
+  /usr/include/c++/15.2.1/bits/align.h \
   /usr/include/c++/15.2.1/bits/alloc_traits.h \
+  /usr/include/c++/15.2.1/bits/allocated_ptr.h \
   /usr/include/c++/15.2.1/bits/allocator.h \
+  /usr/include/c++/15.2.1/bits/atomic_base.h \
+  /usr/include/c++/15.2.1/bits/atomic_lockfree_defines.h \
   /usr/include/c++/15.2.1/bits/basic_ios.h \
   /usr/include/c++/15.2.1/bits/basic_ios.tcc \
   /usr/include/c++/15.2.1/bits/basic_string.h \
@@ -1554,6 +1592,9 @@ CMakeFiles/Sandbox.dir/src/renderer.cpp.o: /home/jastcher/Programming/cpp/Sandbo
   /usr/include/c++/15.2.1/bits/range_access.h \
   /usr/include/c++/15.2.1/bits/refwrap.h \
   /usr/include/c++/15.2.1/bits/requires_hosted.h \
+  /usr/include/c++/15.2.1/bits/shared_ptr.h \
+  /usr/include/c++/15.2.1/bits/shared_ptr_atomic.h \
+  /usr/include/c++/15.2.1/bits/shared_ptr_base.h \
   /usr/include/c++/15.2.1/bits/specfun.h \
   /usr/include/c++/15.2.1/bits/sstream.tcc \
   /usr/include/c++/15.2.1/bits/std_abs.h \
@@ -1566,12 +1607,15 @@ CMakeFiles/Sandbox.dir/src/renderer.cpp.o: /home/jastcher/Programming/cpp/Sandbo
   /usr/include/c++/15.2.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h \
   /usr/include/c++/15.2.1/bits/stl_pair.h \
+  /usr/include/c++/15.2.1/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/15.2.1/bits/stl_tempbuf.h \
   /usr/include/c++/15.2.1/bits/stl_uninitialized.h \
   /usr/include/c++/15.2.1/bits/stl_vector.h \
   /usr/include/c++/15.2.1/bits/streambuf.tcc \
   /usr/include/c++/15.2.1/bits/streambuf_iterator.h \
   /usr/include/c++/15.2.1/bits/string_view.tcc \
   /usr/include/c++/15.2.1/bits/stringfwd.h \
+  /usr/include/c++/15.2.1/bits/unique_ptr.h \
   /usr/include/c++/15.2.1/bits/unordered_map.h \
   /usr/include/c++/15.2.1/bits/uses_allocator.h \
   /usr/include/c++/15.2.1/bits/uses_allocator_args.h \
@@ -1600,6 +1644,7 @@ CMakeFiles/Sandbox.dir/src/renderer.cpp.o: /home/jastcher/Programming/cpp/Sandbo
   /usr/include/c++/15.2.1/ext/aligned_buffer.h \
   /usr/include/c++/15.2.1/ext/alloc_traits.h \
   /usr/include/c++/15.2.1/ext/atomicity.h \
+  /usr/include/c++/15.2.1/ext/concurrence.h \
   /usr/include/c++/15.2.1/ext/numeric_traits.h \
   /usr/include/c++/15.2.1/ext/string_conversions.h \
   /usr/include/c++/15.2.1/ext/type_traits.h \
@@ -1611,8 +1656,11 @@ CMakeFiles/Sandbox.dir/src/renderer.cpp.o: /home/jastcher/Programming/cpp/Sandbo
   /usr/include/c++/15.2.1/iostream \
   /usr/include/c++/15.2.1/istream \
   /usr/include/c++/15.2.1/limits \
+  /usr/include/c++/15.2.1/memory \
   /usr/include/c++/15.2.1/new \
   /usr/include/c++/15.2.1/ostream \
+  /usr/include/c++/15.2.1/pstl/execution_defs.h \
+  /usr/include/c++/15.2.1/pstl/glue_memory_defs.h \
   /usr/include/c++/15.2.1/pstl/pstl_config.h \
   /usr/include/c++/15.2.1/sstream \
   /usr/include/c++/15.2.1/stdexcept \
@@ -3966,6 +4014,7 @@ Sandbox: /home/jastcher/Programming/cpp/Sandbox/vendor/lib/libglfw3.a \
   /usr/lib/libmvec.so.1 \
   /usr/lib/libxcb.so.1 \
   CMakeFiles/Sandbox.dir/src/application.cpp.o \
+  CMakeFiles/Sandbox.dir/src/dataTexture.cpp.o \
   CMakeFiles/Sandbox.dir/src/frameBuffer.cpp.o \
   CMakeFiles/Sandbox.dir/src/main.cpp.o \
   CMakeFiles/Sandbox.dir/src/renderer.cpp.o \
@@ -3993,6 +4042,8 @@ CMakeFiles/Sandbox.dir/vendor/src/imgui_demo.cpp.o:
 CMakeFiles/Sandbox.dir/src/window.cpp.o:
 
 CMakeFiles/Sandbox.dir/src/frameBuffer.cpp.o:
+
+CMakeFiles/Sandbox.dir/src/dataTexture.cpp.o:
 
 CMakeFiles/Sandbox.dir/src/application.cpp.o:
 
@@ -4045,8 +4096,6 @@ CMakeFiles/Sandbox.dir/vendor/src/glad.c.o:
 /usr/include/X11/X.h:
 
 /usr/include/GL/glext.h:
-
-/usr/include/GL/gl.h:
 
 /home/jastcher/Programming/cpp/Sandbox/vendor/include/GLFW/glfw3native.h:
 
@@ -4204,6 +4253,10 @@ CMakeFiles/Sandbox.dir/vendor/src/imgui_widgets.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2bf16intrin.h:
 
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2-512bf16intrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxtransposeintrin.h:
+
 /usr/include/bits/types/__fpos64_t.h:
 
 /usr/include/c++/15.2.1/ios:
@@ -4272,6 +4325,8 @@ CMakeFiles/Sandbox.dir/vendor/src/imgui_widgets.cpp.o:
 
 /home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/packing.hpp:
 
+/usr/include/GL/gl.h:
+
 /home/jastcher/Programming/cpp/Sandbox/vendor/include/imgui/imgui_impl_opengl3.h:
 
 /home/jastcher/Programming/cpp/Sandbox/vendor/include/imgui/imgui_impl_glfw.h:
@@ -4285,8 +4340,6 @@ CMakeFiles/Sandbox.dir/vendor/src/imgui_widgets.cpp.o:
 /usr/include/c++/15.2.1/bits/stl_vector.h:
 
 /usr/include/bits/time.h:
-
-/usr/include/bits/timex.h:
 
 /home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/gtc/matrix_transform.inl:
 
@@ -4344,8 +4397,6 @@ CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_glfw.cpp.o:
 
 /home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/ext/quaternion_common.inl:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxtransposeintrin.h:
-
 /usr/include/bits/pthreadtypes.h:
 
 /usr/include/c++/15.2.1/tr1/beta_function.tcc:
@@ -4397,10 +4448,6 @@ CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_glfw.cpp.o:
 /usr/include/c++/15.2.1/bits/align.h:
 
 /usr/include/c++/15.2.1/debug/debug.h:
-
-/usr/include/c++/15.2.1/tr1/riemann_zeta.tcc:
-
-/usr/include/bits/types/sig_atomic_t.h:
 
 /home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/ext/quaternion_geometric.inl:
 
@@ -4465,6 +4512,8 @@ CMakeFiles/Sandbox.dir/src/shader.cpp.o:
 /usr/include/c++/15.2.1/bits/shared_ptr_atomic.h:
 
 /usr/include/bits/iscanonical.h:
+
+/home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/ext/vector_uint4.hpp:
 
 /home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/ext/matrix_double4x4.hpp:
 
@@ -4600,8 +4649,6 @@ CMakeFiles/Sandbox.dir/src/shader.cpp.o:
 
 /usr/include/c++/15.2.1/bits/functexcept.h:
 
-/usr/include/bits/setjmp.h:
-
 /home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/ext/vector_float2_precision.hpp:
 
 /home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/ext/matrix_double3x4.hpp:
@@ -4620,22 +4667,6 @@ CMakeFiles/Sandbox.dir/src/shader.cpp.o:
 
 /usr/include/pthread.h:
 
-/usr/lib/libc.so.6:
-
-/usr/include/bits/fp-fast.h:
-
-/usr/include/sched.h:
-
-/home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/gtc/quaternion.inl:
-
-/usr/include/wctype.h:
-
-/usr/include/bits/types/__locale_t.h:
-
-/home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/detail/func_vector_relational.inl:
-
-/home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/ext/matrix_float4x4_precision.hpp:
-
 /usr/include/X11/extensions/Xrandr.h:
 
 /usr/include/bits/posix1_lim.h:
@@ -4647,6 +4678,10 @@ CMakeFiles/Sandbox.dir/src/shader.cpp.o:
 /usr/include/bits/environments.h:
 
 /home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/detail/type_mat3x3.hpp:
+
+/usr/include/bits/timex.h:
+
+/home/jastcher/Programming/cpp/Sandbox/src/dataTexture.h:
 
 /usr/include/gnu/stubs-64.h:
 
@@ -4702,6 +4737,18 @@ CMakeFiles/Sandbox.dir/src/shader.cpp.o:
 
 /home/jastcher/Programming/cpp/Sandbox/src/application.cpp:
 
+/home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/ext/matrix_float4x4_precision.hpp:
+
+/usr/lib/libc.so.6:
+
+/usr/include/bits/fp-fast.h:
+
+/usr/include/sched.h:
+
+/home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/gtc/quaternion.inl:
+
+/usr/include/wctype.h:
+
 /home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/detail/setup.hpp:
 
 /usr/include/c++/15.2.1/bits/stl_iterator_base_types.h:
@@ -4755,6 +4802,8 @@ CMakeFiles/Sandbox.dir/src/shader.cpp.o:
 /home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/ext/vector_float3_precision.hpp:
 
 /usr/include/c++/15.2.1/tr1/ell_integral.tcc:
+
+/usr/include/bits/setjmp.h:
 
 /home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/ext/matrix_float3x2.hpp:
 
@@ -4848,6 +4897,12 @@ CMakeFiles/Sandbox.dir/src/shader.cpp.o:
 
 /home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/detail/type_vec3.inl:
 
+/usr/lib/libX11.so.6:
+
+/home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/detail/func_exponential.inl:
+
+/home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/ext/scalar_uint_sized.hpp:
+
 /home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/detail/compute_vector_relational.hpp:
 
 /home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/ext/vector_int4_sized.hpp:
@@ -4904,21 +4959,11 @@ CMakeFiles/Sandbox.dir/src/shader.cpp.o:
 
 /usr/include/bits/types/clockid_t.h:
 
-/usr/lib/libX11.so.6:
-
-/home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/ext/scalar_uint_sized.hpp:
-
-/home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/detail/func_exponential.inl:
-
-/home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/ext/vector_uint4.hpp:
-
 /usr/include/X11/extensions/render.h:
 
 /home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/gtc/epsilon.hpp:
 
 /home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/ext/vector_bool3.hpp:
-
-/home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/ext/vector_int3_sized.hpp:
 
 /usr/include/bits/mathcalls.h:
 
@@ -4927,6 +4972,14 @@ CMakeFiles/Sandbox.dir/src/shader.cpp.o:
 /usr/include/c++/15.2.1/stdexcept:
 
 /home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/ext/vector_uint2_sized.hpp:
+
+/usr/include/c++/15.2.1/tr1/riemann_zeta.tcc:
+
+/usr/include/bits/types/sig_atomic_t.h:
+
+/home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/detail/func_vector_relational.inl:
+
+/usr/include/bits/types/__locale_t.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx2intrin.h:
 
@@ -5322,6 +5375,10 @@ CMakeFiles/Sandbox.dir/src/ui.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h:
 
+/home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/ext/vector_int3_sized.hpp:
+
+/home/jastcher/Programming/cpp/Sandbox/src/dataTexture.cpp:
+
 /home/jastcher/Programming/cpp/Sandbox/src/main.cpp:
 
 /home/jastcher/Programming/cpp/Sandbox/src/renderer.cpp:
@@ -5378,9 +5435,9 @@ CMakeFiles/Sandbox.dir/src/ui.cpp.o:
 
 /usr/include/linux/close_range.h:
 
-/home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/detail/func_geometric.inl:
-
 /usr/include/bits/types/struct_FILE.h:
+
+/home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/detail/func_geometric.inl:
 
 /usr/include/sys/wait.h:
 
@@ -5395,5 +5452,3 @@ CMakeFiles/Sandbox.dir/src/ui.cpp.o:
 /home/jastcher/Programming/cpp/Sandbox/vendor/include/glm/detail/_fixes.hpp:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/amxcomplexintrin.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/avx10_2-512bf16intrin.h:

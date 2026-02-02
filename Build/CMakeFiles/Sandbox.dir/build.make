@@ -86,10 +86,24 @@ CMakeFiles/Sandbox.dir/src/application.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Sandbox.dir/src/application.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jastcher/Programming/cpp/Sandbox/src/application.cpp -o CMakeFiles/Sandbox.dir/src/application.cpp.s
 
+CMakeFiles/Sandbox.dir/src/dataTexture.cpp.o: CMakeFiles/Sandbox.dir/flags.make
+CMakeFiles/Sandbox.dir/src/dataTexture.cpp.o: /home/jastcher/Programming/cpp/Sandbox/src/dataTexture.cpp
+CMakeFiles/Sandbox.dir/src/dataTexture.cpp.o: CMakeFiles/Sandbox.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Sandbox.dir/src/dataTexture.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Sandbox.dir/src/dataTexture.cpp.o -MF CMakeFiles/Sandbox.dir/src/dataTexture.cpp.o.d -o CMakeFiles/Sandbox.dir/src/dataTexture.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/src/dataTexture.cpp
+
+CMakeFiles/Sandbox.dir/src/dataTexture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Sandbox.dir/src/dataTexture.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jastcher/Programming/cpp/Sandbox/src/dataTexture.cpp > CMakeFiles/Sandbox.dir/src/dataTexture.cpp.i
+
+CMakeFiles/Sandbox.dir/src/dataTexture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Sandbox.dir/src/dataTexture.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jastcher/Programming/cpp/Sandbox/src/dataTexture.cpp -o CMakeFiles/Sandbox.dir/src/dataTexture.cpp.s
+
 CMakeFiles/Sandbox.dir/src/frameBuffer.cpp.o: CMakeFiles/Sandbox.dir/flags.make
 CMakeFiles/Sandbox.dir/src/frameBuffer.cpp.o: /home/jastcher/Programming/cpp/Sandbox/src/frameBuffer.cpp
 CMakeFiles/Sandbox.dir/src/frameBuffer.cpp.o: CMakeFiles/Sandbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Sandbox.dir/src/frameBuffer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Sandbox.dir/src/frameBuffer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Sandbox.dir/src/frameBuffer.cpp.o -MF CMakeFiles/Sandbox.dir/src/frameBuffer.cpp.o.d -o CMakeFiles/Sandbox.dir/src/frameBuffer.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/src/frameBuffer.cpp
 
 CMakeFiles/Sandbox.dir/src/frameBuffer.cpp.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/Sandbox.dir/src/frameBuffer.cpp.s: cmake_force
 CMakeFiles/Sandbox.dir/src/main.cpp.o: CMakeFiles/Sandbox.dir/flags.make
 CMakeFiles/Sandbox.dir/src/main.cpp.o: /home/jastcher/Programming/cpp/Sandbox/src/main.cpp
 CMakeFiles/Sandbox.dir/src/main.cpp.o: CMakeFiles/Sandbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Sandbox.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Sandbox.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Sandbox.dir/src/main.cpp.o -MF CMakeFiles/Sandbox.dir/src/main.cpp.o.d -o CMakeFiles/Sandbox.dir/src/main.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/src/main.cpp
 
 CMakeFiles/Sandbox.dir/src/main.cpp.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/Sandbox.dir/src/main.cpp.s: cmake_force
 CMakeFiles/Sandbox.dir/src/renderer.cpp.o: CMakeFiles/Sandbox.dir/flags.make
 CMakeFiles/Sandbox.dir/src/renderer.cpp.o: /home/jastcher/Programming/cpp/Sandbox/src/renderer.cpp
 CMakeFiles/Sandbox.dir/src/renderer.cpp.o: CMakeFiles/Sandbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Sandbox.dir/src/renderer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Sandbox.dir/src/renderer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Sandbox.dir/src/renderer.cpp.o -MF CMakeFiles/Sandbox.dir/src/renderer.cpp.o.d -o CMakeFiles/Sandbox.dir/src/renderer.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/src/renderer.cpp
 
 CMakeFiles/Sandbox.dir/src/renderer.cpp.i: cmake_force
@@ -131,7 +145,7 @@ CMakeFiles/Sandbox.dir/src/renderer.cpp.s: cmake_force
 CMakeFiles/Sandbox.dir/src/shader.cpp.o: CMakeFiles/Sandbox.dir/flags.make
 CMakeFiles/Sandbox.dir/src/shader.cpp.o: /home/jastcher/Programming/cpp/Sandbox/src/shader.cpp
 CMakeFiles/Sandbox.dir/src/shader.cpp.o: CMakeFiles/Sandbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Sandbox.dir/src/shader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Sandbox.dir/src/shader.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Sandbox.dir/src/shader.cpp.o -MF CMakeFiles/Sandbox.dir/src/shader.cpp.o.d -o CMakeFiles/Sandbox.dir/src/shader.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/src/shader.cpp
 
 CMakeFiles/Sandbox.dir/src/shader.cpp.i: cmake_force
@@ -145,7 +159,7 @@ CMakeFiles/Sandbox.dir/src/shader.cpp.s: cmake_force
 CMakeFiles/Sandbox.dir/src/ui.cpp.o: CMakeFiles/Sandbox.dir/flags.make
 CMakeFiles/Sandbox.dir/src/ui.cpp.o: /home/jastcher/Programming/cpp/Sandbox/src/ui.cpp
 CMakeFiles/Sandbox.dir/src/ui.cpp.o: CMakeFiles/Sandbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Sandbox.dir/src/ui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Sandbox.dir/src/ui.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Sandbox.dir/src/ui.cpp.o -MF CMakeFiles/Sandbox.dir/src/ui.cpp.o.d -o CMakeFiles/Sandbox.dir/src/ui.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/src/ui.cpp
 
 CMakeFiles/Sandbox.dir/src/ui.cpp.i: cmake_force
@@ -159,7 +173,7 @@ CMakeFiles/Sandbox.dir/src/ui.cpp.s: cmake_force
 CMakeFiles/Sandbox.dir/src/window.cpp.o: CMakeFiles/Sandbox.dir/flags.make
 CMakeFiles/Sandbox.dir/src/window.cpp.o: /home/jastcher/Programming/cpp/Sandbox/src/window.cpp
 CMakeFiles/Sandbox.dir/src/window.cpp.o: CMakeFiles/Sandbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Sandbox.dir/src/window.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Sandbox.dir/src/window.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Sandbox.dir/src/window.cpp.o -MF CMakeFiles/Sandbox.dir/src/window.cpp.o.d -o CMakeFiles/Sandbox.dir/src/window.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/src/window.cpp
 
 CMakeFiles/Sandbox.dir/src/window.cpp.i: cmake_force
@@ -173,7 +187,7 @@ CMakeFiles/Sandbox.dir/src/window.cpp.s: cmake_force
 CMakeFiles/Sandbox.dir/vendor/src/glad.c.o: CMakeFiles/Sandbox.dir/flags.make
 CMakeFiles/Sandbox.dir/vendor/src/glad.c.o: /home/jastcher/Programming/cpp/Sandbox/vendor/src/glad.c
 CMakeFiles/Sandbox.dir/vendor/src/glad.c.o: CMakeFiles/Sandbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Sandbox.dir/vendor/src/glad.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Sandbox.dir/vendor/src/glad.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Sandbox.dir/vendor/src/glad.c.o -MF CMakeFiles/Sandbox.dir/vendor/src/glad.c.o.d -o CMakeFiles/Sandbox.dir/vendor/src/glad.c.o -c /home/jastcher/Programming/cpp/Sandbox/vendor/src/glad.c
 
 CMakeFiles/Sandbox.dir/vendor/src/glad.c.i: cmake_force
@@ -187,7 +201,7 @@ CMakeFiles/Sandbox.dir/vendor/src/glad.c.s: cmake_force
 CMakeFiles/Sandbox.dir/vendor/src/imgui.cpp.o: CMakeFiles/Sandbox.dir/flags.make
 CMakeFiles/Sandbox.dir/vendor/src/imgui.cpp.o: /home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui.cpp
 CMakeFiles/Sandbox.dir/vendor/src/imgui.cpp.o: CMakeFiles/Sandbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Sandbox.dir/vendor/src/imgui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Sandbox.dir/vendor/src/imgui.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Sandbox.dir/vendor/src/imgui.cpp.o -MF CMakeFiles/Sandbox.dir/vendor/src/imgui.cpp.o.d -o CMakeFiles/Sandbox.dir/vendor/src/imgui.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui.cpp
 
 CMakeFiles/Sandbox.dir/vendor/src/imgui.cpp.i: cmake_force
@@ -201,7 +215,7 @@ CMakeFiles/Sandbox.dir/vendor/src/imgui.cpp.s: cmake_force
 CMakeFiles/Sandbox.dir/vendor/src/imgui_demo.cpp.o: CMakeFiles/Sandbox.dir/flags.make
 CMakeFiles/Sandbox.dir/vendor/src/imgui_demo.cpp.o: /home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui_demo.cpp
 CMakeFiles/Sandbox.dir/vendor/src/imgui_demo.cpp.o: CMakeFiles/Sandbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Sandbox.dir/vendor/src/imgui_demo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Sandbox.dir/vendor/src/imgui_demo.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Sandbox.dir/vendor/src/imgui_demo.cpp.o -MF CMakeFiles/Sandbox.dir/vendor/src/imgui_demo.cpp.o.d -o CMakeFiles/Sandbox.dir/vendor/src/imgui_demo.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui_demo.cpp
 
 CMakeFiles/Sandbox.dir/vendor/src/imgui_demo.cpp.i: cmake_force
@@ -215,7 +229,7 @@ CMakeFiles/Sandbox.dir/vendor/src/imgui_demo.cpp.s: cmake_force
 CMakeFiles/Sandbox.dir/vendor/src/imgui_draw.cpp.o: CMakeFiles/Sandbox.dir/flags.make
 CMakeFiles/Sandbox.dir/vendor/src/imgui_draw.cpp.o: /home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui_draw.cpp
 CMakeFiles/Sandbox.dir/vendor/src/imgui_draw.cpp.o: CMakeFiles/Sandbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Sandbox.dir/vendor/src/imgui_draw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Sandbox.dir/vendor/src/imgui_draw.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Sandbox.dir/vendor/src/imgui_draw.cpp.o -MF CMakeFiles/Sandbox.dir/vendor/src/imgui_draw.cpp.o.d -o CMakeFiles/Sandbox.dir/vendor/src/imgui_draw.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui_draw.cpp
 
 CMakeFiles/Sandbox.dir/vendor/src/imgui_draw.cpp.i: cmake_force
@@ -229,7 +243,7 @@ CMakeFiles/Sandbox.dir/vendor/src/imgui_draw.cpp.s: cmake_force
 CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_glfw.cpp.o: CMakeFiles/Sandbox.dir/flags.make
 CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_glfw.cpp.o: /home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui_impl_glfw.cpp
 CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_glfw.cpp.o: CMakeFiles/Sandbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_glfw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_glfw.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_glfw.cpp.o -MF CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_glfw.cpp.o.d -o CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_glfw.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui_impl_glfw.cpp
 
 CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_glfw.cpp.i: cmake_force
@@ -243,7 +257,7 @@ CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_glfw.cpp.s: cmake_force
 CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_opengl3.cpp.o: CMakeFiles/Sandbox.dir/flags.make
 CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_opengl3.cpp.o: /home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui_impl_opengl3.cpp
 CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_opengl3.cpp.o: CMakeFiles/Sandbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_opengl3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_opengl3.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_opengl3.cpp.o -MF CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_opengl3.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui_impl_opengl3.cpp
 
 CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_opengl3.cpp.i: cmake_force
@@ -257,7 +271,7 @@ CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_opengl3.cpp.s: cmake_force
 CMakeFiles/Sandbox.dir/vendor/src/imgui_tables.cpp.o: CMakeFiles/Sandbox.dir/flags.make
 CMakeFiles/Sandbox.dir/vendor/src/imgui_tables.cpp.o: /home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui_tables.cpp
 CMakeFiles/Sandbox.dir/vendor/src/imgui_tables.cpp.o: CMakeFiles/Sandbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Sandbox.dir/vendor/src/imgui_tables.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Sandbox.dir/vendor/src/imgui_tables.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Sandbox.dir/vendor/src/imgui_tables.cpp.o -MF CMakeFiles/Sandbox.dir/vendor/src/imgui_tables.cpp.o.d -o CMakeFiles/Sandbox.dir/vendor/src/imgui_tables.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui_tables.cpp
 
 CMakeFiles/Sandbox.dir/vendor/src/imgui_tables.cpp.i: cmake_force
@@ -271,7 +285,7 @@ CMakeFiles/Sandbox.dir/vendor/src/imgui_tables.cpp.s: cmake_force
 CMakeFiles/Sandbox.dir/vendor/src/imgui_widgets.cpp.o: CMakeFiles/Sandbox.dir/flags.make
 CMakeFiles/Sandbox.dir/vendor/src/imgui_widgets.cpp.o: /home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui_widgets.cpp
 CMakeFiles/Sandbox.dir/vendor/src/imgui_widgets.cpp.o: CMakeFiles/Sandbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Sandbox.dir/vendor/src/imgui_widgets.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Sandbox.dir/vendor/src/imgui_widgets.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Sandbox.dir/vendor/src/imgui_widgets.cpp.o -MF CMakeFiles/Sandbox.dir/vendor/src/imgui_widgets.cpp.o.d -o CMakeFiles/Sandbox.dir/vendor/src/imgui_widgets.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui_widgets.cpp
 
 CMakeFiles/Sandbox.dir/vendor/src/imgui_widgets.cpp.i: cmake_force
@@ -285,6 +299,7 @@ CMakeFiles/Sandbox.dir/vendor/src/imgui_widgets.cpp.s: cmake_force
 # Object files for target Sandbox
 Sandbox_OBJECTS = \
 "CMakeFiles/Sandbox.dir/src/application.cpp.o" \
+"CMakeFiles/Sandbox.dir/src/dataTexture.cpp.o" \
 "CMakeFiles/Sandbox.dir/src/frameBuffer.cpp.o" \
 "CMakeFiles/Sandbox.dir/src/main.cpp.o" \
 "CMakeFiles/Sandbox.dir/src/renderer.cpp.o" \
@@ -304,6 +319,7 @@ Sandbox_OBJECTS = \
 Sandbox_EXTERNAL_OBJECTS =
 
 Sandbox: CMakeFiles/Sandbox.dir/src/application.cpp.o
+Sandbox: CMakeFiles/Sandbox.dir/src/dataTexture.cpp.o
 Sandbox: CMakeFiles/Sandbox.dir/src/frameBuffer.cpp.o
 Sandbox: CMakeFiles/Sandbox.dir/src/main.cpp.o
 Sandbox: CMakeFiles/Sandbox.dir/src/renderer.cpp.o
@@ -321,7 +337,7 @@ Sandbox: CMakeFiles/Sandbox.dir/vendor/src/imgui_widgets.cpp.o
 Sandbox: CMakeFiles/Sandbox.dir/build.make
 Sandbox: CMakeFiles/Sandbox.dir/compiler_depend.ts
 Sandbox: CMakeFiles/Sandbox.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable Sandbox"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable Sandbox"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Sandbox.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -395,4 +395,20 @@ CMakeFiles/Sandbox.dir/src/renderer.cpp.o: \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
  /usr/include/c++/15.2.1/bits/fstream.tcc /usr/include/c++/15.2.1/sstream \
- /usr/include/c++/15.2.1/bits/sstream.tcc
+ /usr/include/c++/15.2.1/bits/sstream.tcc \
+ /home/jastcher/Programming/cpp/Sandbox/src/window.h \
+ /usr/include/c++/15.2.1/memory \
+ /usr/include/c++/15.2.1/bits/stl_tempbuf.h \
+ /usr/include/c++/15.2.1/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/15.2.1/bits/align.h \
+ /usr/include/c++/15.2.1/bits/unique_ptr.h \
+ /usr/include/c++/15.2.1/bits/shared_ptr.h \
+ /usr/include/c++/15.2.1/bits/shared_ptr_base.h \
+ /usr/include/c++/15.2.1/bits/allocated_ptr.h \
+ /usr/include/c++/15.2.1/ext/concurrence.h \
+ /usr/include/c++/15.2.1/bits/shared_ptr_atomic.h \
+ /usr/include/c++/15.2.1/bits/atomic_base.h \
+ /usr/include/c++/15.2.1/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/15.2.1/backward/auto_ptr.h \
+ /usr/include/c++/15.2.1/pstl/glue_memory_defs.h \
+ /usr/include/c++/15.2.1/pstl/execution_defs.h

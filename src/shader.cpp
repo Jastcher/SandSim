@@ -184,5 +184,7 @@ const std::string Shader::CompileErrors(unsigned int shader, const char *type,
         }
     }
 
+  std::cout << infoLog << std::endl;
+
   return std::string(infoLog);
 }

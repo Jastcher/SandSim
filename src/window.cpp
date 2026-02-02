@@ -11,6 +11,9 @@ bool Window::Init()
       glfwTerminate();
       return 0;
     }
+  glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+  glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
+  glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
   window = glfwCreateWindow(m_Properties.width, m_Properties.height,
                             m_Properties.title, NULL, NULL);
@@ -35,6 +38,8 @@ bool Window::Init()
       std::cout << "failed to init glad" << std::endl;
       return 0;
     }
+
+  std::cout << glGetString(GL_VERSION) << std::endl;
 
   glViewport(0, 0, m_Properties.width, m_Properties.height);
 
@@ -96,7 +101,7 @@ void Window::FrameBufferSizeCallback(GLFWwindow *window, int width, int height)
 
   UserPtr &userPtr       = *(UserPtr *)glfwGetWindowUserPointer(window);
   userPtr.props->width   = width;
-  userPtr.props->height  = width;
+  userPtr.props->height  = height;
   userPtr.isFrameResized = true;
 
   glViewport(0, 0, width, height);

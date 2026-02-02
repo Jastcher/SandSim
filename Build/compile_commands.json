@@ -1,0 +1,92 @@
+[
+{
+  "directory": "/home/jastcher/Programming/cpp/Sandbox/Build",
+  "command": "/usr/bin/c++  -I/home/jastcher/Programming/cpp/Sandbox/vendor/include -I/home/jastcher/Programming/cpp/Sandbox/vendor/include/imgui -I/home/jastcher/Programming/cpp/Sandbox/src -std=gnu++17 -o CMakeFiles/Sandbox.dir/src/application.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/src/application.cpp",
+  "file": "/home/jastcher/Programming/cpp/Sandbox/src/application.cpp",
+  "output": "CMakeFiles/Sandbox.dir/src/application.cpp.o"
+},
+{
+  "directory": "/home/jastcher/Programming/cpp/Sandbox/Build",
+  "command": "/usr/bin/c++  -I/home/jastcher/Programming/cpp/Sandbox/vendor/include -I/home/jastcher/Programming/cpp/Sandbox/vendor/include/imgui -I/home/jastcher/Programming/cpp/Sandbox/src -std=gnu++17 -o CMakeFiles/Sandbox.dir/src/frameBuffer.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/src/frameBuffer.cpp",
+  "file": "/home/jastcher/Programming/cpp/Sandbox/src/frameBuffer.cpp",
+  "output": "CMakeFiles/Sandbox.dir/src/frameBuffer.cpp.o"
+},
+{
+  "directory": "/home/jastcher/Programming/cpp/Sandbox/Build",
+  "command": "/usr/bin/c++  -I/home/jastcher/Programming/cpp/Sandbox/vendor/include -I/home/jastcher/Programming/cpp/Sandbox/vendor/include/imgui -I/home/jastcher/Programming/cpp/Sandbox/src -std=gnu++17 -o CMakeFiles/Sandbox.dir/src/main.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/src/main.cpp",
+  "file": "/home/jastcher/Programming/cpp/Sandbox/src/main.cpp",
+  "output": "CMakeFiles/Sandbox.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/jastcher/Programming/cpp/Sandbox/Build",
+  "command": "/usr/bin/c++  -I/home/jastcher/Programming/cpp/Sandbox/vendor/include -I/home/jastcher/Programming/cpp/Sandbox/vendor/include/imgui -I/home/jastcher/Programming/cpp/Sandbox/src -std=gnu++17 -o CMakeFiles/Sandbox.dir/src/renderer.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/src/renderer.cpp",
+  "file": "/home/jastcher/Programming/cpp/Sandbox/src/renderer.cpp",
+  "output": "CMakeFiles/Sandbox.dir/src/renderer.cpp.o"
+},
+{
+  "directory": "/home/jastcher/Programming/cpp/Sandbox/Build",
+  "command": "/usr/bin/c++  -I/home/jastcher/Programming/cpp/Sandbox/vendor/include -I/home/jastcher/Programming/cpp/Sandbox/vendor/include/imgui -I/home/jastcher/Programming/cpp/Sandbox/src -std=gnu++17 -o CMakeFiles/Sandbox.dir/src/shader.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/src/shader.cpp",
+  "file": "/home/jastcher/Programming/cpp/Sandbox/src/shader.cpp",
+  "output": "CMakeFiles/Sandbox.dir/src/shader.cpp.o"
+},
+{
+  "directory": "/home/jastcher/Programming/cpp/Sandbox/Build",
+  "command": "/usr/bin/c++  -I/home/jastcher/Programming/cpp/Sandbox/vendor/include -I/home/jastcher/Programming/cpp/Sandbox/vendor/include/imgui -I/home/jastcher/Programming/cpp/Sandbox/src -std=gnu++17 -o CMakeFiles/Sandbox.dir/src/ui.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/src/ui.cpp",
+  "file": "/home/jastcher/Programming/cpp/Sandbox/src/ui.cpp",
+  "output": "CMakeFiles/Sandbox.dir/src/ui.cpp.o"
+},
+{
+  "directory": "/home/jastcher/Programming/cpp/Sandbox/Build",
+  "command": "/usr/bin/c++  -I/home/jastcher/Programming/cpp/Sandbox/vendor/include -I/home/jastcher/Programming/cpp/Sandbox/vendor/include/imgui -I/home/jastcher/Programming/cpp/Sandbox/src -std=gnu++17 -o CMakeFiles/Sandbox.dir/src/window.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/src/window.cpp",
+  "file": "/home/jastcher/Programming/cpp/Sandbox/src/window.cpp",
+  "output": "CMakeFiles/Sandbox.dir/src/window.cpp.o"
+},
+{
+  "directory": "/home/jastcher/Programming/cpp/Sandbox/Build",
+  "command": "/usr/bin/cc  -I/home/jastcher/Programming/cpp/Sandbox/vendor/include -I/home/jastcher/Programming/cpp/Sandbox/vendor/include/imgui -I/home/jastcher/Programming/cpp/Sandbox/src  -o CMakeFiles/Sandbox.dir/vendor/src/glad.c.o -c /home/jastcher/Programming/cpp/Sandbox/vendor/src/glad.c",
+  "file": "/home/jastcher/Programming/cpp/Sandbox/vendor/src/glad.c",
+  "output": "CMakeFiles/Sandbox.dir/vendor/src/glad.c.o"
+},
+{
+  "directory": "/home/jastcher/Programming/cpp/Sandbox/Build",
+  "command": "/usr/bin/c++  -I/home/jastcher/Programming/cpp/Sandbox/vendor/include -I/home/jastcher/Programming/cpp/Sandbox/vendor/include/imgui -I/home/jastcher/Programming/cpp/Sandbox/src -std=gnu++17 -o CMakeFiles/Sandbox.dir/vendor/src/imgui.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui.cpp",
+  "file": "/home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui.cpp",
+  "output": "CMakeFiles/Sandbox.dir/vendor/src/imgui.cpp.o"
+},
+{
+  "directory": "/home/jastcher/Programming/cpp/Sandbox/Build",
+  "command": "/usr/bin/c++  -I/home/jastcher/Programming/cpp/Sandbox/vendor/include -I/home/jastcher/Programming/cpp/Sandbox/vendor/include/imgui -I/home/jastcher/Programming/cpp/Sandbox/src -std=gnu++17 -o CMakeFiles/Sandbox.dir/vendor/src/imgui_demo.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui_demo.cpp",
+  "file": "/home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui_demo.cpp",
+  "output": "CMakeFiles/Sandbox.dir/vendor/src/imgui_demo.cpp.o"
+},
+{
+  "directory": "/home/jastcher/Programming/cpp/Sandbox/Build",
+  "command": "/usr/bin/c++  -I/home/jastcher/Programming/cpp/Sandbox/vendor/include -I/home/jastcher/Programming/cpp/Sandbox/vendor/include/imgui -I/home/jastcher/Programming/cpp/Sandbox/src -std=gnu++17 -o CMakeFiles/Sandbox.dir/vendor/src/imgui_draw.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui_draw.cpp",
+  "file": "/home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui_draw.cpp",
+  "output": "CMakeFiles/Sandbox.dir/vendor/src/imgui_draw.cpp.o"
+},
+{
+  "directory": "/home/jastcher/Programming/cpp/Sandbox/Build",
+  "command": "/usr/bin/c++  -I/home/jastcher/Programming/cpp/Sandbox/vendor/include -I/home/jastcher/Programming/cpp/Sandbox/vendor/include/imgui -I/home/jastcher/Programming/cpp/Sandbox/src -std=gnu++17 -o CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_glfw.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui_impl_glfw.cpp",
+  "file": "/home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui_impl_glfw.cpp",
+  "output": "CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_glfw.cpp.o"
+},
+{
+  "directory": "/home/jastcher/Programming/cpp/Sandbox/Build",
+  "command": "/usr/bin/c++  -I/home/jastcher/Programming/cpp/Sandbox/vendor/include -I/home/jastcher/Programming/cpp/Sandbox/vendor/include/imgui -I/home/jastcher/Programming/cpp/Sandbox/src -std=gnu++17 -o CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_opengl3.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui_impl_opengl3.cpp",
+  "file": "/home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui_impl_opengl3.cpp",
+  "output": "CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_opengl3.cpp.o"
+},
+{
+  "directory": "/home/jastcher/Programming/cpp/Sandbox/Build",
+  "command": "/usr/bin/c++  -I/home/jastcher/Programming/cpp/Sandbox/vendor/include -I/home/jastcher/Programming/cpp/Sandbox/vendor/include/imgui -I/home/jastcher/Programming/cpp/Sandbox/src -std=gnu++17 -o CMakeFiles/Sandbox.dir/vendor/src/imgui_tables.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui_tables.cpp",
+  "file": "/home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui_tables.cpp",
+  "output": "CMakeFiles/Sandbox.dir/vendor/src/imgui_tables.cpp.o"
+},
+{
+  "directory": "/home/jastcher/Programming/cpp/Sandbox/Build",
+  "command": "/usr/bin/c++  -I/home/jastcher/Programming/cpp/Sandbox/vendor/include -I/home/jastcher/Programming/cpp/Sandbox/vendor/include/imgui -I/home/jastcher/Programming/cpp/Sandbox/src -std=gnu++17 -o CMakeFiles/Sandbox.dir/vendor/src/imgui_widgets.cpp.o -c /home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui_widgets.cpp",
+  "file": "/home/jastcher/Programming/cpp/Sandbox/vendor/src/imgui_widgets.cpp",
+  "output": "CMakeFiles/Sandbox.dir/vendor/src/imgui_widgets.cpp.o"
+}
+]

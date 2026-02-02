@@ -1,0 +1,40 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/Sandbox.dir/link.d"
+  "CMakeFiles/Sandbox.dir/src/application.cpp.o"
+  "CMakeFiles/Sandbox.dir/src/application.cpp.o.d"
+  "CMakeFiles/Sandbox.dir/src/frameBuffer.cpp.o"
+  "CMakeFiles/Sandbox.dir/src/frameBuffer.cpp.o.d"
+  "CMakeFiles/Sandbox.dir/src/main.cpp.o"
+  "CMakeFiles/Sandbox.dir/src/main.cpp.o.d"
+  "CMakeFiles/Sandbox.dir/src/renderer.cpp.o"
+  "CMakeFiles/Sandbox.dir/src/renderer.cpp.o.d"
+  "CMakeFiles/Sandbox.dir/src/shader.cpp.o"
+  "CMakeFiles/Sandbox.dir/src/shader.cpp.o.d"
+  "CMakeFiles/Sandbox.dir/src/ui.cpp.o"
+  "CMakeFiles/Sandbox.dir/src/ui.cpp.o.d"
+  "CMakeFiles/Sandbox.dir/src/window.cpp.o"
+  "CMakeFiles/Sandbox.dir/src/window.cpp.o.d"
+  "CMakeFiles/Sandbox.dir/vendor/src/glad.c.o"
+  "CMakeFiles/Sandbox.dir/vendor/src/glad.c.o.d"
+  "CMakeFiles/Sandbox.dir/vendor/src/imgui.cpp.o"
+  "CMakeFiles/Sandbox.dir/vendor/src/imgui.cpp.o.d"
+  "CMakeFiles/Sandbox.dir/vendor/src/imgui_demo.cpp.o"
+  "CMakeFiles/Sandbox.dir/vendor/src/imgui_demo.cpp.o.d"
+  "CMakeFiles/Sandbox.dir/vendor/src/imgui_draw.cpp.o"
+  "CMakeFiles/Sandbox.dir/vendor/src/imgui_draw.cpp.o.d"
+  "CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_glfw.cpp.o"
+  "CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_glfw.cpp.o.d"
+  "CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_opengl3.cpp.o"
+  "CMakeFiles/Sandbox.dir/vendor/src/imgui_impl_opengl3.cpp.o.d"
+  "CMakeFiles/Sandbox.dir/vendor/src/imgui_tables.cpp.o"
+  "CMakeFiles/Sandbox.dir/vendor/src/imgui_tables.cpp.o.d"
+  "CMakeFiles/Sandbox.dir/vendor/src/imgui_widgets.cpp.o"
+  "CMakeFiles/Sandbox.dir/vendor/src/imgui_widgets.cpp.o.d"
+  "Sandbox"
+  "Sandbox.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C CXX)
+  include(CMakeFiles/Sandbox.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

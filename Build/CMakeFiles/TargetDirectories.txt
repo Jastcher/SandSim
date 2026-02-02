@@ -1,0 +1,3 @@
+/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles/Sandbox.dir
+/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles/edit_cache.dir
+/home/jastcher/Programming/cpp/Sandbox/Build/CMakeFiles/rebuild_cache.dir

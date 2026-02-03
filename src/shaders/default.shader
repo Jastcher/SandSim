@@ -28,6 +28,6 @@ void main() {
 
     vec4 data = imageLoad(pixelData, texelCoord);
 
-    FragColor = vec4(data.r, 0.2f, 0.0f, 1.0f);
+    FragColor = vec4(data.r, 0.0f, 0.0f, 1.0f);
 
 }

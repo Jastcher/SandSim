@@ -2,6 +2,7 @@
 
 #include "glad/glad.h"
 #include "GLFW/glfw3.h"
+#include "glm/glm.hpp"
 #include <string>
 class ComputeShader
 {
@@ -17,5 +18,10 @@ public:
   std::string LoadFile(const char *filePath);
   const std::string CompileErrors(unsigned int shader, const char *type,
                                   const char *shaderName);
+
+  void SetInt(const char *uniform, int unit);
+  void SetFloat(const char *uniform, float unit);
+  void SetVec2(const char *uniform, glm::vec2 unit);
+
   GLuint id;
 };

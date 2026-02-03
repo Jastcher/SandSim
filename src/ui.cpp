@@ -1,4 +1,6 @@
 #include "ui.h"
+#include <algorithm>
+#include <iostream>
 #include <memory>
 #include "imgui/imgui.h"
 static inline void StartFrame()
@@ -15,8 +17,8 @@ static inline void RenderUI()
 }
 
 UI::UI(std::shared_ptr<FrameBuffer> _frameBuffer,
-       std::shared_ptr<Window> _window)
-    : frameBuffer(_frameBuffer), window(_window)
+       std::shared_ptr<Window> _window, std::shared_ptr<Simulator> _simulator)
+    : frameBuffer(_frameBuffer), window(_window), simulator(_simulator)
 {
   // Setup Dear ImGui context
   IMGUI_CHECKVERSION();
@@ -69,27 +71,56 @@ static inline void MainWindow()
 static inline void ViewportWindow(UI *UI)
 {
   ImGui::Begin("Viewport");
-  float viewportWidth  = ImGui::GetWindowWidth();
-  float viewportHeight = ImGui::GetWindowHeight();
 
-  // Swap the y-coordinates in the ImVec2 to avoid rendering the framebuffer
-  // upside down
-  ImGui::GetWindowDrawList()->AddImage(
-      (unsigned int *)UI->frameBuffer->textureColorbuffer,
-      ImVec2(ImGui::GetCursorScreenPos().x, ImGui::GetCursorScreenPos().y),
-      ImVec2(ImGui::GetCursorScreenPos().x + viewportWidth,
-             ImGui::GetCursorScreenPos().y + viewportHeight),
+  ImVec2 currentSize = ImGui::GetContentRegionAvail();
 
-      ImVec2(0, 1), ImVec2(1, 0));
+  if (currentSize.x != UI->prevViewportSize.x ||
+      currentSize.y != UI->prevViewportSize.y)
+    {
+      UI->didViewportResize = true;
+      UI->prevViewportSize  = UI->viewportSize;
+      UI->viewportSize      = currentSize;
+    }
 
-  UI->viewportFocused = ImGui::IsWindowHovered();
+  ImGui::Image((ImTextureID)(uintptr_t)UI->frameBuffer->textureColorbuffer,
+               currentSize, ImVec2(0, 1), ImVec2(1, 0));
 
-  ImVec2 mousePos = ImGui::GetMousePos();
-  UI->viewportMouseX =
-      mousePos.x - ImGui::GetCursorScreenPos().x - ImGui::GetScrollX();
-  UI->viewportMouseY =
-      mousePos.y - ImGui::GetCursorScreenPos().y - ImGui::GetScrollY();
+  UI->viewportFocused = ImGui::IsItemHovered();
+  UI->isMouseDown     = false;
 
+  if (ImGui::IsItemHovered() && ImGui::IsMouseDown(ImGuiMouseButton_Left))
+    {
+      UI->isMouseDown = true;
+    }
+
+  ImVec2 mouse = ImGui::GetMousePos();
+
+  // Get the actual position of the Image in screen space
+  ImVec2 imageMin = ImGui::GetItemRectMin();
+  ImVec2 imageMax = ImGui::GetItemRectMax();
+
+  // Local mouse inside the image
+  ImVec2 localMouse = ImVec2(mouse.x - imageMin.x, mouse.y - imageMin.y);
+
+  // Flip Y for framebuffer coordinates
+  UI->viewportMouseX = localMouse.x;
+  UI->viewportMouseY = currentSize.y - localMouse.y;
+  ImGui::End();
+}
+
+static inline void InfoWindow(UI *UI)
+{
+  ImGui::Begin("Info");
+  ImGui::Text("Viewport mouse %d ; %d", UI->viewportMouseX, UI->viewportMouseY);
+  ImGui::Text("Window size %d ; %d", UI->window->GetWidth(),
+              UI->window->GetHeight());
+  ImGui::End();
+}
+
+static inline void ControlWindow(UI *UI)
+{
+  ImGui::Begin("Control");
+  ImGui::Checkbox("Play", &UI->simulator->isSimRunning);
   ImGui::End();
 }
 
@@ -103,6 +134,8 @@ void UI::Render()
 
   MainWindow();
   ViewportWindow(this);
+  ControlWindow(this);
+  InfoWindow(this);
 
   RenderUI();
 }

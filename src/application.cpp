@@ -19,9 +19,9 @@ bool Application::Init()
   m_Renderer    = std::make_shared<Renderer>(m_Window);
   m_FrameBuffer = std::make_shared<FrameBuffer>(m_Window->GetWidth(),
                                                 m_Window->GetHeight());
-  m_UI          = std::make_shared<UI>(m_FrameBuffer, m_Window);
   m_Simulator =
       std::make_shared<Simulator>(m_Window->GetWidth(), m_Window->GetHeight());
+  m_UI = std::make_shared<UI>(m_FrameBuffer, m_Window, m_Simulator);
 
   return true;
 }
@@ -32,18 +32,24 @@ void Application::Run()
   while (!glfwWindowShouldClose(m_Window->window))
     {
 
-      if (m_Window->userPtr.isFrameResized)
+      if (m_UI->didViewportResize)
         {
-          std::cout << m_Window->GetWidth() << " ; " << m_Window->GetHeight()
-                    << std::endl;
 
-          m_FrameBuffer->Resize(m_Window->GetWidth(), m_Window->GetHeight());
-          m_Simulator->Resize(m_Window->GetWidth(), m_Window->GetHeight());
+          int viewportWidth  = m_UI->viewportSize.x;
+          int viewportHeight = m_UI->viewportSize.y;
+          std::cout << viewportWidth << " ; " << viewportHeight << std::endl;
+          m_FrameBuffer->Resize(viewportWidth, viewportHeight);
+          m_Simulator->Resize(viewportWidth, viewportHeight);
 
-          m_Window->userPtr.isFrameResized = false;
+          m_UI->didViewportResize = false;
         }
 
-      m_Simulator->Step();
+      if (m_UI->isMouseDown)
+        {
+          m_Simulator->Draw(m_UI->viewportMouseX, m_UI->viewportMouseY);
+        }
+
+      if (m_Simulator->isSimRunning) m_Simulator->Step();
 
       m_FrameBuffer->Bind();
 

@@ -1,6 +1,7 @@
 #pragma once
 #include "frameBuffer.h"
 #include "window.h"
+#include "simulator.h"
 #include <memory>
 
 #include "imgui/imgui.h"
@@ -10,17 +11,24 @@
 class UI
 {
 public:
-  UI(std::shared_ptr<FrameBuffer> frameBuffer, std::shared_ptr<Window> window);
+  UI(std::shared_ptr<FrameBuffer> frameBuffer, std::shared_ptr<Window> window,
+     std::shared_ptr<Simulator> simulator);
   ~UI();
 
   void Render();
 
-public:
   bool viewportFocused;
 
   // viewport mouse coords
   int viewportMouseX, viewportMouseY;
+  bool isMouseDown;
+
+  bool didViewportResize = false;
+  ImVec2 viewportSize;
 
   std::shared_ptr<FrameBuffer> frameBuffer;
   std::shared_ptr<Window> window;
+  std::shared_ptr<Simulator> simulator;
+
+  ImVec2 prevViewportSize;
 };

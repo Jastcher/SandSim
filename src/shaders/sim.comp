@@ -1,0 +1,24 @@
+#version 460 core
+
+layout(local_size_x = 8, local_size_y = 8) in;
+
+layout(rgba8, binding = 0) uniform image2D pixelData;
+
+
+void main() {
+    ivec2 id = ivec2(gl_GlobalInvocationID.xy);
+
+    vec4 current = imageLoad(pixelData, id);
+    vec4 up = imageLoad(pixelData, id + ivec2(0,1));
+    vec4 down = imageLoad(pixelData, id + ivec2(0,-1));
+    vec4 left = imageLoad(pixelData, id + ivec2(-1,0));
+    vec4 right = imageLoad(pixelData, id + ivec2(1,0));
+
+    if (current.r == 1.0f && down.r == 0.0f){
+
+      imageStore(pixelData, id, down);
+      imageStore(pixelData, id + ivec2(0,-1), current);
+    }
+
+
+}

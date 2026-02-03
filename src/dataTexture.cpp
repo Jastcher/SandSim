@@ -1,4 +1,5 @@
 #include "dataTexture.h"
+#include "window.h"
 #include <iostream>
 
 DataTexture::DataTexture()
@@ -20,13 +21,13 @@ void DataTexture::Init(int width, int height)
 
   glCreateTextures(GL_TEXTURE_2D, 1, &id);
   // Allocate storage (RGBA32F is 4 floats per pixel)
-  glTextureStorage2D(id, 1, GL_RGBA8, width, height);
+  glTextureStorage2D(id, 1, GL_RGBA8UI, width, height);
 
   // Set parameters as usual
   glTextureParameteri(id, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
   glTextureParameteri(id, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
-  float clearColor[] = {0.0f, 1.0f, 0.0f, 1.0f};
-  glClearTexImage(id, 0, GL_RGBA, GL_FLOAT, clearColor);
+  GLuint clearColor[] = {0, 0, 0, 1};
+  glClearTexImage(id, 0, GL_RGBA_INTEGER, GL_UNSIGNED_INT, clearColor);
 }
 
 void DataTexture::Resize(int width, int height)
@@ -36,7 +37,7 @@ void DataTexture::Resize(int width, int height)
     {
       // 1. Unbind from common slots just in case
       glBindTexture(GL_TEXTURE_2D, 0);
-      glBindImageTexture(0, 0, 0, GL_FALSE, 0, GL_READ_ONLY, GL_RGBA8);
+      glBindImageTexture(0, 0, 0, GL_FALSE, 0, GL_READ_ONLY, GL_RGBA8UI);
 
       // 2. Delete
       glDeleteTextures(1, &id);

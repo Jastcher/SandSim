@@ -1,17 +1,21 @@
 #version 460 core
 
 layout(local_size_x = 8, local_size_y = 8) in;
-layout(rgba8, binding = 0) uniform image2D imgOutput;
 
-uniform vec2 u_MousePos;
+layout(rgba8ui, binding = 0) uniform uimage2D imgOutput;
+
+uniform vec2 u_MousePos;  
 uniform int selection;
-uniform float width;
+uniform float radius;      
 
 void main() {
     ivec2 pixel_coords = ivec2(gl_GlobalInvocationID.xy);
-    
+
     float dist = distance(vec2(pixel_coords), u_MousePos);
-    if (dist < width) {
-        imageStore(imgOutput, pixel_coords, vec4(selection, 0.0, 0.0, 1.0)); // Red paint
+
+    if (dist <= radius) {
+        imageStore(imgOutput, pixel_coords,
+                    uvec4(selection, 0u, 0u, 0u));
     }
 }
+

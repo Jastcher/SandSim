@@ -20,7 +20,7 @@ void Renderer::RenderScene(GLuint textureID)
   m_Shader.SetInt("width", m_Window->GetWidth());
   m_Shader.SetInt("height", m_Window->GetHeight());
 
-  glBindImageTexture(0, textureID, 0, GL_FALSE, 0, GL_READ_WRITE, GL_RGBA8);
+  glBindImageTexture(0, textureID, 0, GL_FALSE, 0, GL_READ_WRITE, GL_RGBA8UI);
 
   glBindVertexArray(m_LonelyVao);
   glDrawArrays(GL_TRIANGLES, 0, 6);

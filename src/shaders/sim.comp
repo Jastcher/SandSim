@@ -2,23 +2,110 @@
 
 layout(local_size_x = 8, local_size_y = 8) in;
 
-layout(rgba8, binding = 0) uniform image2D pixelData;
+layout(rgba8ui, binding = 0) uniform uimage2D pixelData;
 
+struct Pixel {
+    ivec2 id;
+    uvec4 data;
+    uint selection;
+};
+
+Pixel MakePixel(ivec2 id) {
+    uvec4 data = imageLoad(pixelData, id);
+    Pixel p;
+    p.id = id;
+    p.data = data;
+    p.selection = data.r;
+    return p;
+}
+
+void Store(ivec2 id, uint data) {
+  imageStore(pixelData, id, uvec4(data,0,0,0));
+}
+
+const uint AIR   = 0u;
+const uint SAND  = 1u;
+const uint STONE = 2u;
+const uint WATER = 3u;
 
 void main() {
     ivec2 id = ivec2(gl_GlobalInvocationID.xy);
 
-    vec4 current = imageLoad(pixelData, id);
-    vec4 up = imageLoad(pixelData, id + ivec2(0,1));
-    vec4 down = imageLoad(pixelData, id + ivec2(0,-1));
-    vec4 left = imageLoad(pixelData, id + ivec2(-1,0));
-    vec4 right = imageLoad(pixelData, id + ivec2(1,0));
+    Pixel current = MakePixel(id);
+    Pixel left = MakePixel(id + ivec2(-1, 0));
+    Pixel right= MakePixel(id + ivec2(1, 0));
+    Pixel up = MakePixel(id + ivec2(0,1));
+    Pixel up_right = MakePixel(id + ivec2(1,1));
+    Pixel up_left = MakePixel(id + ivec2(-1,1));
 
-    if (current.r == 1.0f && down.r == 0.0f){
 
-      imageStore(pixelData, id, down);
-      imageStore(pixelData, id + ivec2(0,-1), current);
+    if (current.selection != AIR)
+      return;
+
+    // IF I AM AIR
+
+    //IF THERE IS SAND ABOVE ME
+    if (up.selection == SAND) {
+      Store(current.id, SAND);
+      Store(up.id, AIR);
+
+      return;
     }
 
+    //IF THERE IS SOMETHING LEFT OF ME AND UP LEFT IS SAND
+    if (left.selection != AIR && up_left.selection == SAND) {
+      Store(current.id, SAND);
+      Store(up_left.id, AIR);
+
+      return;
+    }
+    //IF THERE IS SOMETHING RIGHT OF ME AND UP RIGHT IS SAND
+    if (right.selection != AIR && up_right.selection == SAND) {
+      Store(current.id, SAND);
+      Store(up_right.id, AIR);
+
+      return;
+    }
+
+    //IF THERE IS WATER ABOVE ME
+    if (up.selection == WATER) {
+      Store(current.id, WATER);
+      Store(up.id, AIR);
+
+      return;
+    }
+
+    //IF THERE IS SOMETHING LEFT OF ME AND UP LEFT IS WATER
+    if (left.selection != AIR && up_left.selection == WATER) {
+      Store(current.id, WATER);
+      Store(up_left.id, AIR);
+
+      return;
+    }
+    //IF THERE IS SOMETHING RIGHT OF ME AND UP RIGHT IS WATER
+    if (right.selection != AIR && up_right.selection == WATER) {
+      Store(current.id, WATER);
+      Store(up_right.id, AIR);
+
+      return;
+    }
+
+    // 3. HORIZONTAL: If I'm AIR and my neighbor is WATER
+    // We only do this if the water has nowhere to fall
+    if (left.selection == WATER) {
+        // Optional: Check if the water at 'left' is sitting on something
+        Store(current.id, WATER);
+        Store(left.id, AIR);
+        return;
+    }
+    if (right.selection == WATER) {
+        Store(current.id, WATER);
+        Store(right.id, AIR);
+        return;
+    }
+
+    
 
 }
+
+

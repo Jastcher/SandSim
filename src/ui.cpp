@@ -3,6 +3,7 @@
 #include <iostream>
 #include <memory>
 #include "imgui/imgui.h"
+#include "simulator.h"
 static inline void StartFrame()
 {
   ImGui_ImplOpenGL3_NewFrame();
@@ -121,6 +122,17 @@ static inline void ControlWindow(UI *UI)
 {
   ImGui::Begin("Control");
   ImGui::Checkbox("Play", &UI->simulator->isSimRunning);
+
+  if (ImGui::Button("AIR"))
+    UI->simulator->selection = Simulator::Selection::Air;
+  if (ImGui::Button("SAND"))
+    UI->simulator->selection = Simulator::Selection::Sand;
+  if (ImGui::Button("STONE"))
+    UI->simulator->selection = Simulator::Selection::Stone;
+  if (ImGui::Button("WATER"))
+    UI->simulator->selection = Simulator::Selection::Water;
+
+  ImGui::SliderFloat("Radius", &UI->simulator->drawRadius, 1.0f, 100.0f);
   ImGui::End();
 }
 

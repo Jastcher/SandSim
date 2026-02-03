@@ -14,8 +14,16 @@ public:
   void Resize(int width, int height);
   GLuint GetDataTextureID();
 
-  int selection   = 1;
-  float drawWidth = 15.0f;
+  enum class Selection : unsigned int
+  {
+    Air,
+    Sand,
+    Stone,
+    Water
+  };
+
+  Selection selection = Selection::Sand;
+  float drawRadius    = 15.0f;
 
   bool isSimRunning = false;
 

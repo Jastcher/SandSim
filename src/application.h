@@ -3,7 +3,7 @@
 #include "renderer.h"
 #include "frameBuffer.h"
 #include "ui.h"
-#include "dataTexture.h"
+#include "simulator.h"
 
 #include <memory>
 class Application
@@ -23,7 +23,7 @@ private:
   std::shared_ptr<Renderer> m_Renderer;
   std::shared_ptr<FrameBuffer> m_FrameBuffer;
   std::shared_ptr<UI> m_UI;
-  std::shared_ptr<DataTexture> m_DataTexture;
+  std::shared_ptr<Simulator> m_Simulator;
 
   GLuint dataTexture;
 };

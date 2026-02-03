@@ -1,0 +1,18 @@
+#version 460 core
+
+layout(local_size_x = 8, local_size_y = 8) in;
+
+layout(rgba8, binding = 0) uniform image2D pixelData;
+
+
+void main() {
+    ivec2 id = ivec2(gl_GlobalInvocationID.xy);
+
+    vec4 data = imageLoad(pixelData, id);
+
+    data.r += 0.01; 
+    if(data.r > 1.0) data.r = 0.0;
+
+    imageStore(pixelData, id, data);
+
+}

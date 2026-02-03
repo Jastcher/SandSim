@@ -5,10 +5,11 @@
 class DataTexture
 {
 public:
+  DataTexture();
   DataTexture(int width, int height);
   ~DataTexture();
 
-  GLuint id;
+  GLuint id = 0;
 
   void Init(int width, int height);
   void Resize(int width, int height);

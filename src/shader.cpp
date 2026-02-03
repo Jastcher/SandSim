@@ -172,18 +172,16 @@ const std::string Shader::CompileErrors(unsigned int shader, const char *type,
     }
   else
     {
-      // Returns a parameter from a shader object - shader, pname, *params
-      glGetProgramiv(shader, GL_COMPILE_STATUS, &hasCompiled);
+      glGetProgramiv(shader, GL_LINK_STATUS, &hasCompiled);
+
       if (hasCompiled == GL_FALSE)
         {
-          // Returns the information log for a shader object - shader,
-          // maxLength, length, infoLog
           glGetProgramInfoLog(shader, 1024, NULL, infoLog);
           std::cout << shaderName << ": SHADER LINKING ERROR FOR: " << type
                     << std::endl;
+          std::cout << infoLog << std::endl;
         }
     }
-
   std::cout << infoLog << std::endl;
 
   return std::string(infoLog);

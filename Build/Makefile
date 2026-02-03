@@ -153,6 +153,30 @@ src/application.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sandbox.dir/build.make CMakeFiles/Sandbox.dir/src/application.cpp.s
 .PHONY : src/application.cpp.s
 
+src/computeShader.o: src/computeShader.cpp.o
+.PHONY : src/computeShader.o
+
+# target to build an object file
+src/computeShader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sandbox.dir/build.make CMakeFiles/Sandbox.dir/src/computeShader.cpp.o
+.PHONY : src/computeShader.cpp.o
+
+src/computeShader.i: src/computeShader.cpp.i
+.PHONY : src/computeShader.i
+
+# target to preprocess a source file
+src/computeShader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sandbox.dir/build.make CMakeFiles/Sandbox.dir/src/computeShader.cpp.i
+.PHONY : src/computeShader.cpp.i
+
+src/computeShader.s: src/computeShader.cpp.s
+.PHONY : src/computeShader.s
+
+# target to generate assembly for a file
+src/computeShader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sandbox.dir/build.make CMakeFiles/Sandbox.dir/src/computeShader.cpp.s
+.PHONY : src/computeShader.cpp.s
+
 src/dataTexture.o: src/dataTexture.cpp.o
 .PHONY : src/dataTexture.o
 
@@ -272,6 +296,30 @@ src/shader.s: src/shader.cpp.s
 src/shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sandbox.dir/build.make CMakeFiles/Sandbox.dir/src/shader.cpp.s
 .PHONY : src/shader.cpp.s
+
+src/simulator.o: src/simulator.cpp.o
+.PHONY : src/simulator.o
+
+# target to build an object file
+src/simulator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sandbox.dir/build.make CMakeFiles/Sandbox.dir/src/simulator.cpp.o
+.PHONY : src/simulator.cpp.o
+
+src/simulator.i: src/simulator.cpp.i
+.PHONY : src/simulator.i
+
+# target to preprocess a source file
+src/simulator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sandbox.dir/build.make CMakeFiles/Sandbox.dir/src/simulator.cpp.i
+.PHONY : src/simulator.cpp.i
+
+src/simulator.s: src/simulator.cpp.s
+.PHONY : src/simulator.s
+
+# target to generate assembly for a file
+src/simulator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Sandbox.dir/build.make CMakeFiles/Sandbox.dir/src/simulator.cpp.s
+.PHONY : src/simulator.cpp.s
 
 src/ui.o: src/ui.cpp.o
 .PHONY : src/ui.o
@@ -525,6 +573,9 @@ help:
 	@echo "... src/application.o"
 	@echo "... src/application.i"
 	@echo "... src/application.s"
+	@echo "... src/computeShader.o"
+	@echo "... src/computeShader.i"
+	@echo "... src/computeShader.s"
 	@echo "... src/dataTexture.o"
 	@echo "... src/dataTexture.i"
 	@echo "... src/dataTexture.s"
@@ -540,6 +591,9 @@ help:
 	@echo "... src/shader.o"
 	@echo "... src/shader.i"
 	@echo "... src/shader.s"
+	@echo "... src/simulator.o"
+	@echo "... src/simulator.i"
+	@echo "... src/simulator.s"
 	@echo "... src/ui.o"
 	@echo "... src/ui.i"
 	@echo "... src/ui.s"

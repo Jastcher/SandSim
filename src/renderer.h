@@ -1,5 +1,6 @@
 #pragma once
 #include "shader.h"
+#include "computeShader.h"
 #include "window.h"
 #include <memory>
 

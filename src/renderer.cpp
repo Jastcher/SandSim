@@ -1,4 +1,5 @@
 #include "renderer.h"
+#include "computeShader.h"
 #include "shader.h"
 #include <memory>
 
@@ -24,5 +25,5 @@ void Renderer::RenderScene(GLuint textureID)
   glBindVertexArray(m_LonelyVao);
   glDrawArrays(GL_TRIANGLES, 0, 6);
 
-  glMemoryBarrier(GL_SHADER_IMAGE_ACCESS_BARRIER_BIT);
+  // glMemoryBarrier(GL_SHADER_IMAGE_ACCESS_BARRIER_BIT);
 }

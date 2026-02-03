@@ -28,14 +28,6 @@ void main() {
 
     vec4 data = imageLoad(pixelData, texelCoord);
 
-    data.r += 0.01; 
-    if(data.r > 1.0) data.r = 0.0;
-
-    imageStore(pixelData, texelCoord, data);
-
-    FragColor = vec4(data.r, 0.0f, 0.0f, 1.0f);
-    //float r = gl_FragCoord.x/width * 10;
-    //FragColor = vec4(round(r)/10.0f,0.0f,0.0f,1.0f);
-    //FragColor = vec4(1.0f, 0.0f, 0.0f, 1.0f);
+    FragColor = vec4(data.r, 0.2f, 0.0f, 1.0f);
 
 }

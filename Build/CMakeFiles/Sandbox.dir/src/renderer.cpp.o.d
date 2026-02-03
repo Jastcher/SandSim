@@ -396,6 +396,7 @@ CMakeFiles/Sandbox.dir/src/renderer.cpp.o: \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
  /usr/include/c++/15.2.1/bits/fstream.tcc /usr/include/c++/15.2.1/sstream \
  /usr/include/c++/15.2.1/bits/sstream.tcc \
+ /home/jastcher/Programming/cpp/Sandbox/src/computeShader.h \
  /home/jastcher/Programming/cpp/Sandbox/src/window.h \
  /usr/include/c++/15.2.1/memory \
  /usr/include/c++/15.2.1/bits/stl_tempbuf.h \

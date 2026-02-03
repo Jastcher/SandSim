@@ -1,5 +1,9 @@
 #include "dataTexture.h"
+#include <iostream>
 
+DataTexture::DataTexture()
+{
+}
 DataTexture::DataTexture(int width, int height)
 {
   Init(width, height);
@@ -21,7 +25,7 @@ void DataTexture::Init(int width, int height)
   // Set parameters as usual
   glTextureParameteri(id, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
   glTextureParameteri(id, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
-  float clearColor[] = {0.0f, 0.0f, 0.0f, 1.0f};
+  float clearColor[] = {0.0f, 1.0f, 0.0f, 1.0f};
   glClearTexImage(id, 0, GL_RGBA, GL_FLOAT, clearColor);
 }
 
@@ -30,7 +34,13 @@ void DataTexture::Resize(int width, int height)
 
   if (id != 0)
     {
+      // 1. Unbind from common slots just in case
+      glBindTexture(GL_TEXTURE_2D, 0);
+      glBindImageTexture(0, 0, 0, GL_FALSE, 0, GL_READ_ONLY, GL_RGBA8);
+
+      // 2. Delete
       glDeleteTextures(1, &id);
+      id = 0; // Reset to 0 so we don't use a junk ID
     }
   Init(width, height);
 }

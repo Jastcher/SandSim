@@ -6,7 +6,9 @@ layout(rgba8ui, binding = 0) uniform uimage2D imgOutput;
 
 uniform vec2 u_MousePos;  
 uniform int selection;
+uniform int props;
 uniform float radius;      
+
 
 void main() {
     ivec2 pixel_coords = ivec2(gl_GlobalInvocationID.xy);

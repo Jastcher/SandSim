@@ -49,7 +49,10 @@ void Application::Run()
           m_Simulator->Draw(m_UI->viewportMouseX, m_UI->viewportMouseY);
         }
 
-      if (m_Simulator->isSimRunning) m_Simulator->Step();
+      for (int i = 0; i < 1; i++)
+        {
+          if (m_Simulator->isSimRunning) m_Simulator->Step();
+        }
 
       m_FrameBuffer->Bind();
 

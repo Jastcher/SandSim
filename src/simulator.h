@@ -30,7 +30,9 @@ public:
 private:
   ComputeShader m_ComputeSim;
   ComputeShader m_ComputeDraw;
+
   DataTexture m_DataTexture;
+  DataTexture m_DataTextureNext;
 
   int m_Width, m_Height;
 };

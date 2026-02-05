@@ -123,16 +123,40 @@ static inline void ControlWindow(UI *UI)
   ImGui::Begin("Control");
   ImGui::Checkbox("Play", &UI->simulator->isSimRunning);
 
-  if (ImGui::Button("AIR"))
-    UI->simulator->selection = Simulator::Selection::Air;
-  if (ImGui::Button("SAND"))
-    UI->simulator->selection = Simulator::Selection::Sand;
-  if (ImGui::Button("STONE"))
-    UI->simulator->selection = Simulator::Selection::Stone;
-  if (ImGui::Button("WATER"))
-    UI->simulator->selection = Simulator::Selection::Water;
+  Simulator &s = *UI->simulator.get();
+
+  for (int i = 0; i < s.particles.size(); i++)
+    {
+      ImGui::PushID(i);
+      ImGui::AlignTextToFramePadding();
+
+      Particle p = s.particles[i];
+
+      if (ImGui::Selectable("##s", s.selection == i)) s.selection = i;
+
+      ImGui::SameLine();
+      // TODO: add color from simulator array
+      ImGui::ColorButton("##c", ImVec4(1.0f, 1.0f, 0.0f, 1.0f),
+                         ImGuiColorEditFlags_NoTooltip);
+      ImGui::SameLine();
+      ImGui::Text("%s", p.name);
+      ImGui::PopID();
+    }
 
   ImGui::SliderFloat("Radius", &UI->simulator->drawRadius, 1.0f, 100.0f);
+  ImGui::End();
+}
+
+static inline void PropertiesWindow(UI *UI)
+{
+  Simulator *s = UI->simulator.get();
+
+  ImGui::Begin("Properties");
+
+  Particle &p = s->particles[s->selection];
+
+  ImGui::Text("%s", p.name);
+
   ImGui::End();
 }
 
@@ -148,6 +172,7 @@ void UI::Render()
   ViewportWindow(this);
   ControlWindow(this);
   InfoWindow(this);
+  PropertiesWindow(this);
 
   RenderUI();
 }
